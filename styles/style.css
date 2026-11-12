@@ -128,7 +128,7 @@ article {
 
 article h2 {
   color: var(--highlight);
-  margin: 10px;
+  margin: 20px;
 }
 
 .video-container {
@@ -181,6 +181,37 @@ article h2 {
   height: 100%;
   background-color: var(--inverse-highlight);
   border-radius: 4px;
+}
+
+#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#formacao-container .curso {
+  background-color: var(--main-background);
+  border-radius: 8px;
+  border-left: 5px solid var(--inverse-highlight);
+  padding-left: 15px;
+  transition: border-width .5s, border-color .5s;
+}
+
+#formacao-container .curso:hover {
+  border-left-width: 15px;
+  cursor: pointer;
+  border-color: var(--highlight);
+}
+
+#formacao-container .periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--text);
+}
+
+#formacao-container .instituicao {
+  color: var(--inverse-highlight);
+  font-size: 1.1em;
 }
 
 @media screen and (min-width: 768px) {
