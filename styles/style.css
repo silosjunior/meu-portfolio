@@ -3,11 +3,11 @@
 /* 
   Colors' variables:
   --main-background
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
+  --text
+  --inverse-text
+  --highlight
+  --inverse-highlight
+  --card-background
 */
 
 * {
@@ -25,11 +25,21 @@
   --background-card: #ffffff;
 }
 
+body.escuro {
+  --main-background: #222222;
+  --text: #e0e0e0;
+  --inverse-text: #333333;
+  --highlight: #ff5522;
+  --inverse-highlight: #a73917;
+  --background-card: #444444;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--main-background);
   color: var(--text);
+  transition: background-color .2s, color .2s;
 }
 
 header {
@@ -71,6 +81,7 @@ main {
   display: grid;
   grid-template-columns: auto 90vw auto;
   margin-top: 20px;
+  gap: 10px;
 }
 
 section#ficha {
