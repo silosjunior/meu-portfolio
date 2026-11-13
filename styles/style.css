@@ -39,6 +39,9 @@ header {
   background-color: var(--highlight);
   color: var(--text);
   padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 #menu ul {
@@ -136,7 +139,6 @@ article h2 {
   width: 100%;
   margin: auto;
   aspect-ratio: 16/9;
-  border: 5px solid red;
 }
 
 .video-container iframe {
